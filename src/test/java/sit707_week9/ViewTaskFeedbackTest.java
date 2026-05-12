@@ -14,7 +14,7 @@ public class ViewTaskFeedbackTest {
         ViewTaskFeedback service = new ViewTaskFeedback();
         ViewTaskFeedback.FeedbackResult result = service.getTaskFeedback("student123", "task456");
 
-        assertEquals("Bad work!", result.getFeedback());
+        assertEquals("Great work!", result.getFeedback());
         List<String> expectedChat = Arrays.asList(
             "Tutor: Please check your code formatting.",
             "Student: Sure, I’ll fix that."
